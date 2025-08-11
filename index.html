@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Kitchen Duty Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kitchen Duty Calendar</h1>
+            <div class="today-info">
+                <h2>Today's Responsibility</h2>
+                <div class="today-person" id="todayPerson">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="calendar-section">
+                <div class="calendar-header">
+                    <button id="prevMonth" class="nav-btn">&lt;</button>
+                    <h2 id="monthYear"></h2>
+                    <button id="nextMonth" class="nav-btn">&gt;</button>
+                </div>
+                
+                <div class="calendar-grid">
+                    <div class="calendar-weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div id="calendarDays" class="calendar-days">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="responsibilities-section">
+                <h3>Kitchen Duty – When It's Your Turn</h3>
+                <ul class="responsibilities-list">
+                    <li>Wipe counters and tables</li>
+                    <li>Empty the dishwasher and load any dirty dishes</li>
+                    <li>Clear and wipe the sink</li>
+                    <li>Put things back where they belong</li>
+                    <li>Toss any trash or recycling</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
